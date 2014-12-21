@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="arw.apps.decisionpig2"
+    android:versionCode="3"
+    android:versionName="3.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="arw.apps.decisionpig2.MainActivity"
+            android:configChanges="orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="arw.apps.decisionpig2.Decision"
+            android:label="@string/title_activity_decision"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="arw.apps.decisionpig2.MeethePigs"
+            android:label="@string/title_activity_meethe_pigs" >
+        </activity>
+    </application>
+
+</manifest>
